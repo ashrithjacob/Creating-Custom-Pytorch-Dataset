@@ -8,5 +8,8 @@
     - img_path, label
     - img_path, label
     - img_path, label
-    - ...
-4 See how to further reduce boilerplate code by using pytorch lightning's DataModule:https://lightning.ai/docs/pytorch/stable/data/datamodule.html
+    - ...\
+4. See how to further reduce boilerplate code by using pytorch lightning's DataModule:https://lightning.ai/docs/pytorch/stable/data/datamodule.html
+
+## Example
+See `CustomDataset.py` for the implementation of the dataset class and also for an example of how to use the dataset.
