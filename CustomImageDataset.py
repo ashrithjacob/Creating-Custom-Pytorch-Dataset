@@ -40,11 +40,11 @@ if __name__ == "__main__":
 
     dataset = CustomImageDataset(
         annotations_file="./data/labels.csv",
-        img_dir="./data/data2/",
+        img_dir="./data/data1",
         transform=transform,
     )
 
-    train_dataloader = DataLoader(dataset, batch_size=2, shuffle=True)
+    train_dataloader = DataLoader(dataset, batch_size=2, shuffle=False)
     dataiter = iter(train_dataloader)
     images,_ = next(dataiter)
     imshow(torchvision.utils.make_grid(images))
